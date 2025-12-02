@@ -20,60 +20,56 @@
         background: linear-gradient(hotpink, skyblue);
         color: white;
       }
-      .button1 {
+      button1 {
         background: linear-gradient(hotpink, skyblue);
         color: white;
       }
-      .button2 {
+      button2 {
         background: linear-gradient(#7cb342, #ffee58);
         color: white;
       }
-      .button3 {
+      button3 {
         background: linear-gradient(#CD2128, #FFFFFF);
         color: white;
       }
-      .button4 {
+      button4 {
         background: linear-gradient(#7b1fa2, #fdd835);
         color: white;
       }
+header{background:linear-gradient(pink,limegreen,white);
+      padding: 30px;
+      text-align:center;
+      border-radius;10px;}
+    section{background: linear-gradient(limegreen,yellow,white);
+           padding: 15px;
+           margin: 20px auto;
+           width: 70%;
+           border-radius: 10px;}
+    p{text-indent: 2em;}
 
-      header {
-        background: linear-gradient(hotpink, white, skyblue);
-        padding: 30px;
-        text-align: center;
-        border-radius: 10px;
-      }
-        section{background: linear-gradient(Hotpink,LightSkyblue,white);
-          padding: 15px;
-          margin:20px auto;
-          width:70%;
-          border-radius: 10px;}
-      p{text-indient: 2em;}
+    .zoom:hover{transform: scale(1.5); cursor:pointer;}
 
+  img:hover{animation: glowcolors 1.2s infinite alternate;}
 
-  .zoom:hover{transform: scale(1.5); cursor:pointer;}
-      img:hover {
-        animation: glowcolors 1.2s infinite alternate;
-      }
+  @keyframes glowcolors
+  {
+      0% {box-shadow: 0 0 20px hotpink;}
+      25% {box-shadow: 0 0 20px skyblue;}
+      50% {box-shadow: 0 0 20px gold;}
+      75% {box-shadow: 0 0 20px darkviolet;}
+      100% {box-shadow: 0 0 20px red;}
+  }
 
-      @keyframes glowcolors {
-        0%   {box-shadow: 0 0 20px hotpink;}
-        25%  {box-shadow: 0 0 20px skyblue;}
-        50%  {box-shadow: 0 0 20px gold;}
-        75%  {box-shadow: 0 0 20px darkviolet;}
-        100% {box-shadow: 0 0 20px red;}
-      }
-
-      .blink-bg {
-        animation: blinkbg 1s infinite alternate;
-        padding: 5px 10px;
-        border-radius: 5px;
-      }
-
-      @keyframes blinkbg {
-        0% {background: yellow;}
-        100% {background: orange;}
-      }
+  .blink-bg
+  {
+    animation: blinkbg 1s infinite alternate; padding: 3px 6px;
+  }
+  @keyframes blinkbg
+  { 
+    0% {background: yellow;}
+     100% {background: orange;}
+  }
+     
     
   </style> 
   </head>
